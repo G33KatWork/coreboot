@@ -91,6 +91,7 @@ static const struct {
 	{ PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_CORE_4TH_GEN_U, "4th generation (Haswell family) Core Processor ULT" },
 	{ PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_CORE_5TH_GEN_U, "5th generation (Broadwell family) Core Processor ULT" },
 	{ PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_BAYTRAIL, "Bay Trail" },
+	{ PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_BRASWELL, "Braswell" },
 	/* Southbridges (LPC controllers) */
 	{ PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_82371XX, "371AB/EB/MB" },
 	{ PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_ICH10R, "ICH10R" },
@@ -172,6 +173,7 @@ static const struct {
 	{ PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_WILDCATPOINT_LP, "Wildcat Point Low Power SKU" },
 	{ PCI_VENDOR_ID_INTEL, 0x2310, "DH89xxCC" },
 	{ PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_BAYTRAIL_LPC, "Bay Trail" },
+	{ PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_BRASWELL_LPC, "Braswell" },
 };
 
 #ifndef __DARWIN__

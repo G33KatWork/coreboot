@@ -187,6 +187,12 @@ static inline uint32_t inl(unsigned port)
 #define PCI_DEVICE_ID_INTEL_BAYTRAIL_GFX	0x0f31
 #define CPUID_BAYTRAIL						0x30670
 
+/* Braswell */
+#define PCI_DEVICE_ID_INTEL_BRASWELL        0x2280 /* SOC Transaction Router */
+#define PCI_DEVICE_ID_INTEL_BRASWELL_LPC    0x229c
+#define PCI_DEVICE_ID_INTEL_BRASWELL_GFX    0x22b1
+#define CPUID_BRASWELL                      0x406c0
+
 /* Intel starts counting these generations with the integration of the DRAM controller */
 #define PCI_DEVICE_ID_INTEL_CORE_0TH_GEN	0xd132 /* Nehalem */
 #define PCI_DEVICE_ID_INTEL_CORE_1ST_GEN	0x0044 /* Westmere */

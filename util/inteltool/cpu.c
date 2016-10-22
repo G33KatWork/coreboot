@@ -1007,7 +1007,7 @@ int print_intel_core_msrs(void)
  * September 2014
  * Vol. 3C 35-59
  */
-	static const msr_entry_t silvermont_per_core_msrs[] = {
+	static const msr_entry_t silvermont_airmont_per_core_msrs[] = {
 		/*
 		 * Per core MSRs in Intel Processors Based on the Silvermont Microarchitecture
 		 * These are MSRs marked as "core"
@@ -1132,7 +1132,7 @@ int print_intel_core_msrs(void)
 		{ 0x06e0, "IA32_TSC_DEADLINE" },
 	};
 
-	static const msr_entry_t silvermont_global_msrs[] = {
+	static const msr_entry_t silvermont_airmont_global_msrs[] = {
 		/*
 		 * Common MSRs in Intel Processors Based on the Silvermont Microarchitecture
 		 * These are MSRs marked as "shared" or "package"
@@ -1182,7 +1182,8 @@ int print_intel_core_msrs(void)
 		{ 0x106c0, model6_atom_global_msrs, ARRAY_SIZE(model6_atom_global_msrs), model6_atom_per_core_msrs, ARRAY_SIZE(model6_atom_per_core_msrs) },
 		{ 0x20650, model20650_global_msrs, ARRAY_SIZE(model20650_global_msrs), model20650_per_core_msrs, ARRAY_SIZE(model20650_per_core_msrs) },
 
-		{ CPUID_BAYTRAIL, silvermont_global_msrs, ARRAY_SIZE(silvermont_global_msrs), silvermont_per_core_msrs, ARRAY_SIZE(silvermont_per_core_msrs) }, /* Baytrail */
+		{ CPUID_BAYTRAIL, silvermont_airmont_global_msrs, ARRAY_SIZE(silvermont_airmont_global_msrs), silvermont_airmont_per_core_msrs, ARRAY_SIZE(silvermont_airmont_per_core_msrs) }, /* Baytrail */
+		{ CPUID_BRASWELL, silvermont_airmont_global_msrs, ARRAY_SIZE(silvermont_airmont_global_msrs), silvermont_airmont_per_core_msrs, ARRAY_SIZE(silvermont_airmont_per_core_msrs) }, /* Braswell */
 
 	};
 
